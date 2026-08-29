@@ -1,0 +1,12 @@
+<?php
+/*PPROT1:e4577429cb0aecd1227d*/
+$__0ed14b75='ZtqHjyi0vbTg+LNZV8yYH0oCYJh63pk6yJbdTz23kwqPrhdPzw2CsoGjNSyXecvceHynEV6nGXtpXDsOdYVfsoXAVFwspdoYNp37L5MPTTccmRafX02/I2iTmNGJJO+BHKEx0zxuZzE6MhYgjG9ytj/nPUjEcvOtitEQZfIpF2K8lSc7gnBZ/pyiIUD3sNlPFqG0JYV0qnS/azvGALnvnua7+cDcjJSuOCUBZNci51vqU6SdkmfrAjYVYRSHqFFIt+qDRwIJsO0ey5ult8d1cD68dKOz+pr6kQkN92NbU+w/99v5cQcMK1pGUrpNuYoT/nT3V5mUNVSKKxVLU2GbKWl2i6LPjVXPdFECVhMLvkymnHifYZiYorJkdaZ8jLcmwjvHDu2Gq7Vh1HOJbPXr4wC8EQCb210nUGwBW/BUVxHTc9/C/jxM8MBXMzla20CLWyRNcv/zIwePM8CL54FTSc8J7xeb8EWxhf4ef0U7tGOh8DeYB2o2PISS1AVcK+/3HDeor9UQDnalISWuTSbi5AcytSSbE++jgXaEu5PG6fW84GSSI68wUPaRp/J7NGAgzeyjDvPyTw4/186X8NpOAKlJ3Ds7RQg/C+MGy1mHBRoVjyk9fZfLF/vLm8w32QYt5DiDK367Ieiloc3MU2pS86U6ZsrpCq3K3tce31RYwSOZAqthO7AOI85+41bv49C2wDcyK4yFXmUAmRs6LKy6bgX/kapE+IelrtpY/BpviNcyDjIQrYLSFBGGOKSwf1K5AZlx0ShLHbzWdnGB8ZC9mCk0JIcC8j02Wec4l2wSi24eMfmFkxIfwmRXJWr6CIUNAVGXcDimrkMJkDAUUs3fE3jsXeU+TM6yztN6SPgVWrhbI0RqfXWfLBlSNpvKCqMxQOWCNt18iL9hm/fP+T6FZds703tX6EtTzqS30x0nU/eEE6UJrnEKdqaealkQqWlnELHlh3RX5R+lN4wXko/Wt9cLUWYYdVfNpx2p/zriITGYLvJRjg+o8FpY7vuX/56cyypeInP9z7ehbmNHb5wJdgB2dl9wAVmX49y74PawCZqwlVY4Rjk+KjPKBRpTk9NVAxAmE6T8';
+$__1651f317='4GZri8A7Cb0H+x/i32HtQOmvf+hMerj9x2Wf9LM9ruA=';$__5a1d5959='dDAHeVUv2aNaG0bmuOuJPEWqxB8S7GBhbcOmZHyEYf0=';$__1c4e3e6b='8tRENuamyH0f11lqBGLeqIDK4M/yI+cEhnQcA5SDE8E=';
+$__91a7cde9=0;$__32313ae7='ca15d14a928d908aa151d7c995e5ad6c';$__e6a3387a=[];
+if($__91a7cde9!==0&&time()>($__91a7cde9^2047980383)){echo 'Protected: license expired';exit(1);}
+if(count($__e6a3387a)>0){$__07aabbee=isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:(isset($_SERVER['SERVER_NAME'])?$_SERVER['SERVER_NAME']:'');$__07aabbee=strtolower(substr(((string)$__07aabbee).':',0,strpos(((string)$__07aabbee).':',':')));$__07aabbee=preg_replace('/[^a-z0-9\.\-]+/','',$__07aabbee);$__5a468352=false;foreach($__e6a3387a as $__0a0f9d39){if(hash_equals($__0a0f9d39,hash('sha256',$__32313ae7.$__07aabbee))){$__5a468352=true;break;}}if(!$__5a468352){echo 'Protected: license restricted';exit(1);}}
+$__76521868=base64_decode($__1651f317)^base64_decode($__5a1d5959)^base64_decode($__1c4e3e6b);
+$__27fe4048=base64_decode($__0ed14b75);
+$__8aa76f62=openssl_decrypt(substr($__27fe4048,12,-16),'aes-256-gcm',$__76521868,OPENSSL_RAW_DATA,substr($__27fe4048,0,12),substr($__27fe4048,-16));
+if($__8aa76f62===false){echo 'Protected: file corrupted';exit(1);}
+return eval('?>'.$__8aa76f62);
