@@ -23,5 +23,7 @@
                 "License": "Taha20\\LicenseClient\\Facades\\License"
             }
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
