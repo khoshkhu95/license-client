@@ -9,6 +9,7 @@
         .card { background: #fff; border-radius: 10px; padding: 2rem; box-shadow: 0 2px 10px rgba(0,0,0,.08); width: 100%; max-width: 420px; }
         h2 { margin-top: 0; }
         input[type=text] { width: 100%; padding: .65rem; border: 1px solid #d1d5db; border-radius: 6px; margin-top: .4rem; box-sizing: border-box; font-size: 1rem; letter-spacing: 1px; }
+        textarea { width: 100%; padding: .65rem; border: 1px solid #d1d5db; border-radius: 6px; margin-top: .4rem; box-sizing: border-box; font-size: 1rem; letter-spacing: 1px; }
         label { font-size: .85rem; font-weight: 600; color: #374151; }
         .btn { width: 100%; padding: .7rem; border-radius: 6px; background: #2563eb; color: #fff; border: none; font-size: 1rem; cursor: pointer; margin-top: 1.25rem; }
         .btn-danger { background: #dc2626; }
@@ -56,15 +57,15 @@
         <label for="license_key">کلید لایسنس</label>
         <input type="text" id="license_key" name="license_key"
                value="{{ old('license_key') }}"
-               placeholder="XXXXX-XXXXX-XXXXX-XXXXX" required autofocus>
+               placeholder="XXXXX-XXXXX-XXXXX-XXXXX" required autofocus autocomplete="off">
 
         @error('license_key')
             <div class="status-bad" style="margin-top:.6rem">{{ $message }}</div>
         @enderror
 
         <label for="shared_secret" style="margin-top:1rem">Shared Secret</label>
-        <input type="text" id="shared_secret" name="shared_secret"
-               placeholder="مقداری که همراه کلید لایسنس دریافت کرده‌اید" required>
+        <textarea type="text" id="shared_secret" name="shared_secret"
+               placeholder="مقداری که همراه کلید لایسنس دریافت کرده‌اید" required></textarea>
 
         @error('shared_secret')
             <div class="status-bad" style="margin-top:.6rem">{{ $message }}</div>
